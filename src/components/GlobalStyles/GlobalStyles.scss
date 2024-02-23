@@ -1,0 +1,47 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fe2c55;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'M PLUS Rounded 1c', 'sans-serif';
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+img,
+input,
+label,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+textarea,
+input,
+button {
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
