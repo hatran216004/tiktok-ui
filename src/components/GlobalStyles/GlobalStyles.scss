@@ -58,3 +58,33 @@ a[href] {
 input {
     caret-color: #fe2c55;
 }
+
+body {
+    & .tippy-box {
+        border-radius: 8px;
+    }
+
+    &.tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px !important;
+    }
+
+    & .tippy-content {
+        padding: 7px 9px;
+
+        height: 38px;
+
+        color: #fff;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        background-color: rgba(84, 84, 84, 0.92);
+
+        pointer-events: visible;
+    }
+
+    & .tippy-arrow {
+        &::before {
+            border-bottom-color: rgba(84, 84, 84, 0.92) !important;
+        }
+    }
+}
