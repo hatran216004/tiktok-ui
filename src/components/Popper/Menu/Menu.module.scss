@@ -20,3 +20,29 @@
 .menu-dropdown {
     padding-bottom: 8px;
 }
+
+// Heading menu
+.header {
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    height: 50px;
+}
+
+.back-btn {
+    margin-left: 28px;
+    width: 24px;
+    height: 100%;
+    transition: translate 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        translate: -3px 0;
+    }
+}
+
+.heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
