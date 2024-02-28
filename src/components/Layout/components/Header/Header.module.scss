@@ -118,9 +118,37 @@
 
 .action-btn {
     font-size: 2.4rem;
-    padding: 3px 16px;
-    color: var(--primary);
+    padding: 3px 12px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.inbox-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: '20';
+        min-width: 26px;
+        height: 18px;
+
+        font-size: 1.2rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 999px;
+        color: #fff;
+        background-color: var(--primary);
+
+        position: absolute;
+        top: -6px;
+        right: -6px;
+    }
 }
 
 .user-avatar {

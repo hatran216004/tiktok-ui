@@ -6,7 +6,7 @@
     column-gap: 8px;
 
     height: 38px;
-    padding: 0 16px;
+    padding: 0 13px;
     border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 700;
@@ -57,6 +57,16 @@
     &:hover {
         border-color: currentColor;
         background-color: rgba(254, 44, 85, 0.06);
+    }
+}
+
+.upload {
+    border-color: rgba(22, 24, 35, 0.12);
+    color: var(--text-color);
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+        border-color: rgba(22, 24, 35, 0.12);
     }
 }
 
