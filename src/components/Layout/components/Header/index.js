@@ -108,7 +108,7 @@ function Header() {
                     {currentUser ? (
                         <>
                             <div className={cx('action-btn')}>
-                                <Button href="true" outline upload leftIcon={<FontAwesomeIcon icon={faPlus} />}>
+                                <Button to={'/upload'} outline upload leftIcon={<FontAwesomeIcon icon={faPlus} />}>
                                     Upload
                                 </Button>
                             </div>
