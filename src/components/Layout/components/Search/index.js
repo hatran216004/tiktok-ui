@@ -52,6 +52,8 @@ function Search() {
         setShowResult(false);
     };
 
+    const handleSubmit = () => {};
+
     return (
         <HeadlessTippy
             interactive
@@ -87,7 +89,7 @@ function Search() {
                 )}
                 {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
 
-                <button className={cx('search-btn')}>
+                <button className={cx('search-btn')} onClick={handleSubmit}>
                     <SearchIcon />
                 </button>
             </div>
