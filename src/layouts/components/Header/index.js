@@ -16,7 +16,7 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { Link } from 'react-router-dom';
 
-import routesConfig from '~/config/routes';
+import config from '~/config';
 import styles from './Header.module.scss';
 import images from '~/assets/imgs';
 import Button from '~/components/Button';
@@ -99,7 +99,7 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <Link to={routesConfig.home} className={cx('logo')}>
+                <Link to={config.routes.home} className={cx('logo')}>
                     <img src={images.logo} alt="TikTok" />
                 </Link>
 
@@ -110,7 +110,7 @@ function Header() {
                         <>
                             <div className={cx('action-btn')}>
                                 <Button
-                                    to={routesConfig.upload}
+                                    to={config.routes.upload}
                                     outline
                                     upload
                                     leftIcon={<FontAwesomeIcon icon={faPlus} />}
