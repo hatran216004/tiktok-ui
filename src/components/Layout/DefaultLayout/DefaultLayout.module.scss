@@ -5,6 +5,7 @@
 }
 
 .container {
+    margin-top: var(--default-layout-header-hight);
     width: var(--default-layout-width);
     max-width: calc(100% - 48px);
     padding: 0 var(--default-layout-horzontal-spacer);

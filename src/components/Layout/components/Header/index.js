@@ -103,15 +103,18 @@ function Header() {
                     <img src={images.logo} alt="TikTok" />
                 </Link>
 
-                <div>
-                    <Search />
-                </div>
+                <Search />
 
                 <div className={cx('action')}>
                     {currentUser ? (
                         <>
                             <div className={cx('action-btn')}>
-                                <Button to={'/upload'} outline upload leftIcon={<FontAwesomeIcon icon={faPlus} />}>
+                                <Button
+                                    to={routesConfig.upload}
+                                    outline
+                                    upload
+                                    leftIcon={<FontAwesomeIcon icon={faPlus} />}
+                                >
                                     Upload
                                 </Button>
                             </div>
@@ -143,7 +146,7 @@ function Header() {
                         {currentUser ? (
                             <Image
                                 className={cx('user-avatar')}
-                                src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/280545795_740810917078711_6467780029175581584_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeFNJflN3wmHoEPOvy1eJmMytF3QqiQx-bS0XdCqJDH5tABkIirDLXz_cod0dpy062ImkAssVEw3mUdgETTMeijh&_nc_ohc=cAdKNbWfA5YAX99SW-9&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfB-0lFp9x8w3jl1lEawNkljl_C5EKY9QVFCD9C-cngmbA&oe=65E11D0C"
+                                src="https://scontent.fsgn19-1.fna.fbcdn.net/v/t39.30808-6/280545795_740810917078711_6467780029175581584_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeFNJflN3wmHoEPOvy1eJmMytF3QqiQx-bS0XdCqJDH5tABkIirDLXz_cod0dpy062ImkAssVEw3mUdgETTMeijh&_nc_ohc=eclJdXmKmPgAX_k1kHS&_nc_ht=scontent.fsgn19-1.fna&oh=00_AfBoC2KLilZ8eym6bVqp9KLxnL16-fiPB7I50IA7UxhYBg&oe=65E9060C"
                                 alt="Ha Tran"
                                 fallback="https://files.fullstack.edu.vn/f8-prod/user_avatars/372125/65563202ee752.jpg"
                             />
