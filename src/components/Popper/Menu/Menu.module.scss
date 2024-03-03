@@ -26,6 +26,7 @@
 }
 
 .menu-scorllable {
+    overscroll-behavior: none;
     overflow-y: auto;
 }
 
