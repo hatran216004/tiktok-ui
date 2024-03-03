@@ -5,6 +5,7 @@ const httpRequest = axios.create({
 });
 
 export const get = async (path, options = {}) => {
+    // response sẽ là một đối tượng phản hồi (response object) được trả về từ Axios
     const response = await httpRequest.get(path, options);
     return response.data;
 };
